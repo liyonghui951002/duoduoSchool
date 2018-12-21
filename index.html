@@ -1,0 +1,1138 @@
+<!doctype html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
+		<link rel="stylesheet" href="css/sweetalert.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="lib/jquery/jquery-3.3.1.min.js"></script>
+		<script src="lib/popper.min.js"></script>
+		<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+		<!--[if lt IE 9]>
+    <script src="lib/html5shiv.min.js"></script>
+    <script src="lib/respond.min.js"></script>
+    <![endif]-->
+		<title>多多商学院</title>
+	</head>
+
+	<body>
+		<header>
+
+			<div class="container-fluid top">
+				<div class="container">
+					<div class="login-status d-none d-md-block">你好
+						<a href="user-center.html">金牌用户</a>，欢迎来到多多商学院！</div>
+					<div class="login-from">
+						<ul class="login">
+							<li>
+								<a href="login.html">登录</a>
+							</li>
+							<li>
+								<a href="register.html">免费注册</a>
+							</li>
+						</ul>
+						<ul class="users">
+							<li>
+								<a href="user-center.html"><i class="icon usercenter"></i>个人中心</a>
+							</li>
+							<li>
+								<a href="#"><i class="icon sitemap"></i>网站导航</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid menu">
+				<div class="container">
+					<div class="row">
+						<nav class="navbar navbar-expand-md col-12 col-md-9">
+							<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+							<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#headerMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+							<div class="collapse navbar-collapse" id="headerMenu">
+								<ul class="navbar-nav">
+									<li class="nav-item">
+										<a class="nav-link" href="index.html">首页</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="news-list.html">电商资讯</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="online.html">线上课程</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="training.html">线下培训</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="diagnose.html">店铺诊断</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="vip.html">加入VIP</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+						<div class="header-search  col-12 col-md-3 d-none d-md-block">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="请输入搜索关键字" aria-label="请输入搜索关键字">
+								<div class="input-group-append">
+									<button class="btn btn-outline-secondary" type="button">搜索</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid home-bannar">
+				<div class="swiper-container homebannar">
+					<div class="swiper-wrapper">
+						<!--<div class="swiper-slide" style="background-image:url(images/bannar/bannar-01.jpg)"></div>
+						<div class="swiper-slide" style="background-image:url(images/bannar/bannar-02.jpg)"></div>
+						<div class="swiper-slide" style="background-image:url(images/bannar/bannar-03.jpg)"></div>
+						<div class="swiper-slide" style="background-image:url(images/bannar/bannar-04.jpg)"></div>-->
+					</div>
+					<div class="swiper-pagination swiper-pagination-white"></div>
+					<div class="swiper-button-next swiper-button-white"></div>
+					<div class="swiper-button-prev swiper-button-white"></div>
+				</div>
+				<div class="container homelink d-none d-md-block">
+					<div class="home-nav">
+						<!--<h5>热门推荐</h5>
+						<ul>
+							<li>
+								<a href="online.html" target="_blank">免费课程</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">直通车</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">日常运营</a>
+							</li>
+						</ul>
+						<h5>日常运营</h5>
+						<ul>
+							<li>
+								<a href="online.html" target="_blank">爆款打造</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">店铺活动</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">会员管理</a>
+							</li>
+						</ul>
+						<h5>引流利器</h5>
+						<ul>
+							<li>
+								<a href="online.html" target="_blank">免费流量</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">钻石展位</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">淘宝客</a>
+							</li>
+						</ul>
+						<h5>手机淘宝</h5>
+						<ul>
+							<li>
+								<a href="online.html" target="_blank">手淘运营</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">内容营销</a>
+							</li>
+						</ul>
+						<h5>其他</h5>
+						<ul class="mb-0 noborder">
+							<li>
+								<a href="online.html" target="_blank">新手开店</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">内容营销</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">全部课程</a>
+							</li>
+						</ul>-->
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="hot d-none d-md-block">
+				<div class="container-fluid">
+					<div class="container">
+						<div class="title">
+							<h3>热门科目</h3>
+							<span>30+科目，300+课程，每天20+更新</span>
+							<a href="#" target="_blank" class="more">更多>></a>
+						</div>
+						<div class="row">
+							<div class="col">
+								<a href="#" target="_blank" class="styy hover-shadow">
+									<i class="icon styy"></i> 手淘运营
+								</a>
+							</div>
+							<div class="col">
+								<a href="#" target="_blank" class="mfll hover-shadow">
+									<i class="icon mfll"></i> 免费流量
+								</a>
+							</div>
+							<div class="col">
+								<a href="#" target="_blank" class="hygl hover-shadow">
+									<i class="icon hygl"></i> 会员管理
+								</a>
+							</div>
+							<div class="col">
+								<a href="#" target="_blank" class="nryx hover-shadow">
+									<i class="icon nryx"></i> 内容营销
+								</a>
+							</div>
+							<div class="col">
+								<a href="#" target="_blank" class="bkdz hover-shadow">
+									<i class="icon bkdz"></i> 爆款打造
+								</a>
+							</div>
+							<div class="col">
+								<a href="#" target="_blank" class="ztc hover-shadow">
+									<i class="icon ztc"></i> 直通车
+								</a>
+							</div>
+							<div class="col">
+								<a href="#" target="_blank" class="rcyy hover-shadow">
+									<i class="icon rcyy"></i> 日常运营
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="hot d-block d-md-none pb-0">
+				<div class="container-fluid">
+					<div class="container">
+						<div class="title px-2">
+							<h3>热门科目</h3>
+							<a href="#" target="_blank" class="more">更多>></a>
+						</div>
+						<div class="row nomargin">
+							<div class="col-6 mb-3">
+								<a href="#" target="_blank" class="styy hover-shadow">
+									<i class="icon styy"></i> 手淘运营
+								</a>
+							</div>
+							<div class="col-6  mb-3">
+								<a href="#" target="_blank" class="mfll hover-shadow">
+									<i class="icon mfll"></i> 免费流量
+								</a>
+							</div>
+							<div class="col-6 mb-3">
+								<a href="#" target="_blank" class="hygl hover-shadow">
+									<i class="icon hygl"></i> 会员管理
+								</a>
+							</div>
+							<div class="col-6 mb-3">
+								<a href="#" target="_blank" class="nryx hover-shadow">
+									<i class="icon nryx"></i> 内容营销
+								</a>
+							</div>
+							<div class="col-6 mb-3">
+								<a href="#" target="_blank" class="bkdz hover-shadow">
+									<i class="icon bkdz"></i> 爆款打造
+								</a>
+							</div>
+							<div class="col-6 mb-3">
+								<a href="#" target="_blank" class="ztc hover-shadow">
+									<i class="icon ztc"></i> 直通车
+								</a>
+							</div>
+							<div class="col-12 mb-3">
+								<a href="#" target="_blank" class="rcyy hover-shadow">
+									<i class="icon rcyy"></i> 日常运营
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="classics">
+				<div class="container-fluid">
+					<div class="container px-2">
+						<div class="title">
+							<h3>精品课程推荐</h3>
+							<div class="link d-none d-md-block">
+								<ul>
+									<li>
+										<a href="online.html" target="_blank">直通车</a>
+									</li>
+									<li>
+										<a href="online.html" target="_blank">日常运营</a>
+									</li>
+									<li>
+										<a href="online.html" target="_blank">爆款打造</a>
+									</li>
+									<li>
+										<a href="online.html" target="_blank">店铺互动</a>
+									</li>
+									<li>
+										<a href="online.html" target="_blank">会员管理</a>
+									</li>
+									<li>
+										<a href="online.html" target="_blank">免费流量</a>
+									</li>
+									<li>
+										<a href="online.html" target="_blank">钻石展位</a>
+									</li>
+								</ul>
+							</div>
+							<a href="#" target="_blank" class="more">更多>></a>
+						</div>
+						<div class="row">
+							<div class="col-6 col-md-3">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+									<span>已更新完毕，共12节课</span>
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+							<div class="col-6 col-md-3">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+									<span>已更新完毕，共12节课</span>
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+							<div class="col-6 col-md-3">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+									<span>已更新完毕，共12节课</span>
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+							<div class="col-6 col-md-3">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+									<span>已更新完毕，共12节课</span>
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+							<div class="col-6 col-md-3">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+									<span>已更新完毕，共12节课</span>
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+							<div class="col-6 col-md-3">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+									<span>已更新完毕，共12节课</span>
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+							<div class="col-6 col-md-3">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+									<span>已更新完毕，共12节课</span>
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+							<div class="col-6 col-md-3">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+									<span>已更新完毕，共12节课</span>
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+							<div class="col-6 col-md-3">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+									<span>已更新完毕，共12节课</span>
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+							<div class="col-6 col-md-3">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+									<span>已更新完毕，共12节课</span>
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+							<div class="col-6 col-md-3">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+									<span>已更新完毕，共12节课</span>
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+							<div class="col-6 col-md-3">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+									<span>已更新完毕，共12节课</span>
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="newest d-none d-md-block">
+				<div class="container-fluid">
+					<div class="container px-2">
+						<div class="title">
+							<h3>最新课程</h3>
+							<div class="link">
+								<ul>
+									<li>
+										<a href="online.html" target="_blank">直通车</a>
+									</li>
+									<li>
+										<a href="online.html" target="_blank">日常运营</a>
+									</li>
+									<li>
+										<a href="online.html" target="_blank">爆款打造</a>
+									</li>
+									<li>
+										<a href="online.html" target="_blank">店铺互动</a>
+									</li>
+									<li>
+										<a href="online.html" target="_blank">会员管理</a>
+									</li>
+									<li>
+										<a href="online.html" target="_blank">免费流量</a>
+									</li>
+									<li>
+										<a href="online.html" target="_blank">钻石展位</a>
+									</li>
+								</ul>
+								<a href="#" target="_blank" class="more">更多>></a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="list">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+							<div class="list">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+							<div class="list">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+							<div class="list">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+							<div class="list">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+							<div class="list">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+							<div class="list">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+							<div class="list">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+							<div class="list">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+							<div class="list">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="newest d-block d-md-none">
+				<div class="container-fluid">
+					<div class="container px-2">
+						<div class="title">
+							<h3>最新课程</h3>
+							<div class="link">
+								<a href="#" target="_blank" class="more">更多>></a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-6 list">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+							<div class="col-6 list">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+							<div class="col-6 list">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+							<div class="col-6 list">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+							<div class="col-6 list">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+							<div class="col-6 list">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+							<div class="col-6 list">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+							<div class="col-6 list">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+							<div class="col-6 list">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+							<div class="col-6 list">
+								<a href="online-det.html" target="_blank" class="img">
+									<img src="images/temp/kc.jpg" alt="">
+								</a>
+								<h5><a href="online-det.html" target="_blank">夏款暴走—权重提升大揭秘！</a></h5>
+								<div class="teacher">
+									<span class="float-left">主讲：小宇</span>
+									<span class="float-right">已有 <b>5670</b> 人学过</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="who center">
+				<div class="container-fluid">
+					<div class="container">
+						<div class="title">
+							<h1>我们是谁？</h1>
+							<span>立足电商成长之所需，线上线下多元化、多方位的电商学习平台</span>
+						</div>
+						<div class="row">
+							<div class="col-12 col-md-4 mb-4">
+								<i class="icon ljkb"></i>
+								<h1>400<b>+次</b></h1>
+								<span>累计开班</span>
+							</div>
+							<div class="col-12 col-md-4 mb-4">
+								<i class="icon xsxx"></i>
+								<h1>100000<b>+次</b></h1>
+								<span>线上线下累计学员</span>
+							</div>
+							<div class="col-12 col-md-4 mb-4">
+								<i class="icon yxds"></i>
+								<h1>100<b>+次</b></h1>
+								<span>优秀导师</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<section class="choice center">
+				<div class="container-fluid">
+					<div class="container px-2">
+						<div class="title">
+							<h1>为什么一定要选择<b>多多商学院</b></h1>
+							<span>完善的电商生态系统，先进的教学体系，一切只为给你更好的</span>
+						</div>
+						<div class="row">
+							<div class="col-6 col-md-3">
+								<i class="icon kctx"></i>
+								<h3>丰富的课程体系</h3>
+								<p>一线大卖家操盘手根据卖家需求和淘宝趋势研发专业课程体系。</p>
+							</div>
+							<div class="col-6 col-md-3">
+								<i class="icon qdds"></i>
+								<h3>强大的导师阵容</h3>
+								<p>只挑选国内知明电商企业创始人及实战精英。</p>
+							</div>
+							<div class="col-6 col-md-3">
+								<i class="icon dyh"></i>
+								<h3>多元化的教学模式</h3>
+								<p>线上线下结合，深入式学习+现场实操演练。</p>
+							</div>
+							<div class="col-6 col-md-3">
+								<i class="icon fwty"></i>
+								<h3>周到的服务体验</h3>
+								<p>打通电商人脉，交流借鉴成功案例，资源共享互利共赢。</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<section class="system center">
+				<div class="container-fluid">
+					<div class="container px-2">
+						<div class="title">
+							<h1><b>完善</b>的课程体系</h1>
+							<span>解决你电商路上的所有需求</span>
+						</div>
+						<div class="row">
+							<div class="col-6 col-md-3">
+								<div class="box">
+									<i class="icon yygh"></i>
+									<h3>运营规划</h3>
+									<p>研究市场、产品布局规划比盲目努力更重要</p>
+								</div>
+							</div>
+							<div class="col-6 col-md-3">
+								<div class="box">
+									<i class="icon ztcyl"></i>
+									<h3>直通车引流</h3>
+									<p>想知道直通车如何不赔钱的情况下还可以带动店铺流量</p>
+								</div>
+							</div>
+							<div class="col-6 col-md-3">
+								<div class="box">
+									<i class="icon zszw"></i>
+									<h3>钻石展位</h3>
+									<p>快速拉新、留存、唤醒老客户的同时拉升手淘免费流量</p>
+								</div>
+							</div>
+							<div class="col-6 col-md-3">
+								<div class="box">
+									<i class="icon tktg"></i>
+									<h3>淘客推广</h3>
+									<p>手把手教你淘客，从新品到单品推爆的引流实用技巧</p>
+								</div>
+							</div>
+
+							<div class="col-6 col-md-3">
+								<div class="box">
+									<i class="icon kspl"></i>
+									<h3>快速破零</h3>
+									<p>如何使用不违规的方法让新品快速突破销量</p>
+								</div>
+							</div>
+							<div class="col-6 col-md-3">
+								<div class="box">
+									<i class="icon wzhd"></i>
+									<h3>玩转活动</h3>
+									<p>搞定活动审核能过率，活动产出，活动后期数据维稳</p>
+								</div>
+							</div>
+							<div class="col-6 col-md-3">
+								<div class="box">
+									<i class="icon llbs"></i>
+									<h3>流量飙升</h3>
+									<p>如何通过优化宝贝标题，让搜索流量飙升</p>
+								</div>
+							</div>
+							<div class="col-6 col-md-3">
+								<div class="box">
+									<i class="icon hyyx"></i>
+									<h3>会员营销</h3>
+									<p>提高营销效率促成裂变，节省推广成本，提高流量价值</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<section class="teacher center">
+				<div class="container-fluid">
+					<div class="container px-2">
+						<div class="title">
+							<h1>明星讲师</h1>
+							<span>只挑选国内知名电商企业创始人及实战精英</span>
+						</div>
+						<div class="row">
+							<div class="col-6 col-md-3">
+								<i class="icon teacher01"></i>
+								<div class="title">
+									<h5>云鹤</h5>
+									<span>前直通车技术小二超级云托管创始人</span>
+								</div>
+								<p>从事淘宝直通车优化技术的研究及培训，曾就职于微软亚洲工程院、阿里云、淘宝网公司，在互联网搜索的广告技术上有深入研究。</p>
+							</div>
+							<div class="col-6 col-md-3">
+								<i class="icon teacher02"></i>
+								<div class="title">
+									<h5>贾真</h5>
+									<span>淘宝搜索客座专家萌物品牌创始人</span>
+								</div>
+								<p>坚持奋斗在一线的3C类目天猫掌柜，日均发件量3000件，淘宝搜索客座专家，淘宝搜索负责人—鬼脚七书籍搜索优化方向特邀作者。</p>
+							</div>
+							<div class="col-6 col-md-3">
+								<i class="icon teacher03"></i>
+								<div class="title">
+									<h5>明道</h5>
+									<span>淘宝卖家成长魔方专家数据学院讲师</span>
+								</div>
+								<p>8年电子商务实操经验，涉及女装、户外、母婴、美装、食品、中老年服装等类目，授课幽默生动，课堂实操转化率高达80%。</p>
+							</div>
+							<div class="col-6 col-md-3">
+								<i class="icon teacher04"></i>
+								<div class="title">
+									<h5>朱华杰</h5>
+									<span>多多商学院数据分析师品牌企业视觉导师</span>
+								</div>
+								<p>16年的电商从业经验，帮助电商企业梳理各岗位流程、标准及KPI，并且实现了全店转化率2倍左右的增长，美工工作效率50%以上的提升。</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<section class="link center">
+				<div class="container-fluid">
+					<div class="container">
+						<div class="title">
+							<h1>这些优秀的店铺也<b>选择我们</b></h1>
+							<span>只挑选国内知名电商企业创始人及实战精英</span>
+						</div>
+						<div class="row">
+							<div class="col-6 col-md-2">
+								<a href="#"><img src="images/temp/friendlink-01.png" alt=""></a>
+							</div>
+							<div class="col-6 col-md-2">
+								<a href="#"><img src="images/temp/friendlink-01.png" alt=""></a>
+							</div>
+							<div class="col-6 col-md-2">
+								<a href="#"><img src="images/temp/friendlink-01.png" alt=""></a>
+							</div>
+							<div class="col-6 col-md-2">
+								<a href="#"><img src="images/temp/friendlink-01.png" alt=""></a>
+							</div>
+							<div class="col-6 col-md-2">
+								<a href="#"><img src="images/temp/friendlink-01.png" alt=""></a>
+							</div>
+							<div class="col-6 col-md-2">
+								<a href="#"><img src="images/temp/friendlink-01.png" alt=""></a>
+							</div>
+							<div class="col-6 col-md-2">
+								<a href="#"><img src="images/temp/friendlink-01.png" alt=""></a>
+							</div>
+							<div class="col-6 col-md-2">
+								<a href="#"><img src="images/temp/friendlink-01.png" alt=""></a>
+							</div>
+							<div class="col-6 col-md-2">
+								<a href="#"><img src="images/temp/friendlink-01.png" alt=""></a>
+							</div>
+							<div class="col-6 col-md-2">
+								<a href="#"><img src="images/temp/friendlink-01.png" alt=""></a>
+							</div>
+							<div class="col-6 col-md-2">
+								<a href="#"><img src="images/temp/friendlink-01.png" alt=""></a>
+							</div>
+							<div class="col-6 col-md-2">
+								<a href="#"><img src="images/temp/friendlink-01.png" alt=""></a>
+							</div>
+							<div class="col-6 col-md-2">
+								<a href="#"><img src="images/temp/friendlink-01.png" alt=""></a>
+							</div>
+							<div class="col-6 col-md-2">
+								<a href="#"><img src="images/temp/friendlink-01.png" alt=""></a>
+							</div>
+							<div class="col-6 col-md-2">
+								<a href="#"><img src="images/temp/friendlink-01.png" alt=""></a>
+							</div>
+							<div class="col-6 col-md-2">
+								<a href="#"><img src="images/temp/friendlink-01.png" alt=""></a>
+							</div>
+							<div class="col-6 col-md-2">
+								<a href="#"><img src="images/temp/friendlink-01.png" alt=""></a>
+							</div>
+							<div class="col-6 col-md-2">
+								<a href="#"><img src="images/temp/friendlink-01.png" alt=""></a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="container-fluid">
+				<div class="container">
+					<div class="row">
+						<div class="col-6 col-md-3">
+							<i class="icon zykm"></i>
+							<h3>30+ 个专业科目</h3>
+							<p>涵盖几乎所有热门职业技能，总有一门技能是你想掌握</p>
+						</div>
+						<div class="col-6 col-md-3">
+							<i class="icon ydtb"></i>
+							<h3>4大学习终端云同步</h3>
+							<p>支持电脑、手机、平板、电视同步学习，随时随地畅享学习乐趣</p>
+						</div>
+						<div class="col-6 col-md-3">
+							<i class="icon hdzb"></i>
+							<h3>12小时实时互动直播</h3>
+							<p>真实而有趣的用户体验，让学习变得愉悦，更加高效</p>
+						</div>
+						<div class="col-6 col-md-3">
+							<i class="icon xxfa"></i>
+							<h3>1套完整的学习方案</h3>
+							<p>以保障学习效果为最终目的，打造颠覆性的翻转课堂体验</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid copy">
+				<div class="container">
+					<div class="link">
+						<ul>
+							<li>
+								<a href="online.html" target="_blank">关于我们</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">联系我们</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">加入我们</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">媒体报道</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">公司账号</a>
+							</li>
+						</ul>
+					</div>
+					<h5><span>友情链接</span></h5>
+					<div class="yqlink">
+						<ul>
+							<li>
+								<a href="online.html" target="_blank">腾讯精品课</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">中国培训网</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">易百教程</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">爱奇艺教育</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">UI设计教程</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">优胜教育</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">CFA</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">西点师培训</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">清华大学出版社</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">书问</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">网络营销</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">腾讯精品课</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">中国培训网</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">优胜教育</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">CFA</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">西点师培训</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">清华大学出版社</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">书问</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">网络营销</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">中国培训网</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">易百教程</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">爱奇艺教育</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">UI设计教程</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">CFA</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">西点师培训</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">清华大学出版社</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">书问</a>
+							</li>
+							<li>
+								<a href="online.html" target="_blank">网络营销</a>
+							</li>
+						</ul>
+					</div>
+					<div class="copy">
+						Copyright&nbsp;&copy;&nbsp;2018-2028&nbsp;多多商学院&nbsp;&nbsp;粤ICP备120301010号
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+
+</html>
+<script src="lib/swiper/js/swiper.min.js"></script>
+<script src="js/bannar.js"></script>
+<script src="js/sweetalert.min.js"></script>
+<script src="js/untils.js"></script>
+<script type="text/javascript">
+	if(getCookie("duoduoName") == null) {} else {
+		$(".login").html('<li><span style="color: red;">欢迎，' + getCookie("duoduoName") + '</span></li>');
+	}
+	//首页导航
+	request("http://192.168.31.55/car/api.php?m=category&a=indexCategory", "", function(result) {
+		if(result.result) {
+			for(var i = 0; i < result.data.dataArr.length; i++) {
+				var data = result.data.dataArr[i];
+				var html = '<h5>' + data.title + '</h5>'; //一级导航
+				html += (i == result.data.dataArr.length - 1) ? '<ul class="mb-0 noborder">' : '<ul>';
+				for(var j = 0; j < data.children.length; j++) {
+					html += '<li><a href="online.html?cid=' + data.children[j].id + '" target="_blank">' + data.children[j].title + '</a></li>'
+				}
+				html += '</ul>';
+				$(".home-nav").append(html);
+			}
+		} else {
+			swalert("", result.msg, "error", function(data) {});
+		}
+	});
+	//首页轮播图<div class="swiper-slide" style="background-image:url(images/bannar/bannar-02.jpg)"></div>
+	request("http://192.168.31.77/car/api.php?m=roll&a=list", "", function(result) {
+		if(result.result) {
+			for(var i = 0; i < result.data.length; i++) {
+				var data = result.data[i];
+				var html = '<div class="swiper-slide" style="background-image:url(' + data.path + ')" href="' + data.jump_url + '"></div>';
+				$(".swiper-wrapper").append(html);
+			}
+			var swiper = new Swiper('.homebannar', {
+				spaceBetween: 30,
+				effect: 'fade',
+				autoplay: {
+					delay: 3000,
+					stopOnLastSlide: false,
+					disableOnInteraction: true,
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+					// dynamicBullets: true,
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+				on:{
+			     	 click:function(event){
+			     	 	 event.stopPropagation();
+				         window.open($(".swiper-slide").eq(this.clickedIndex).attr("href"));    
+				      }
+			    }
+			});
+//			$(".swiper-slide").click(function() {
+//				alert(123);
+//				window.location.href = $(this).attr("href");
+//			})
+		} else {
+			swalert("", result.msg, "error", function(data) {});
+		}
+	});
+</script>

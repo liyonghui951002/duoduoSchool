@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="lib/jquery/jquery-3.3.1.min.js"></script>
+    <script src="lib/popper.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="lib/html5shiv.min.js"></script>
+    <script src="lib/respond.min.js"></script>
+    <![endif]-->
+    <title>多多商学院</title>
+</head>
+<body>
+<header>
+    <div class="container-fluid top">
+        <div class="container">
+            <div class="login-status d-none d-md-block">你好 <a href="user-center.html">金牌用户</a>，欢迎来到多多商学院！</div>
+            <div class="login-from">
+                <ul class="login">
+                    <li><a href="login.html">登录</a></li>
+                    <li><a href="register.html">免费注册</a></li>
+                </ul>
+                <ul class="users">
+                    <li><a href="user-center.html"><i class="icon usercenter"></i>个人中心</a></li>
+                    <li><a href="#"><i class="icon sitemap"></i>网站导航</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid menu">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-md col-12 col-md-9">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+                    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#headerMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="headerMenu">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">首页</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="news-list.html">电商资讯</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="online.html">线上课程</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="training.html">线下培训</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="diagnose.html">店铺诊断</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="vip.html">加入VIP</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="header-search  col-12 col-md-3 d-none d-md-block">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="请输入搜索关键字" aria-label="请输入搜索关键字">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button">搜索</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="crumbs">
+        <div class="container-fluid">
+            <div class="container px-2">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">首页</a></li>
+                        <li class="breadcrumb-item"><a href="#">要闻</a></li>
+                        <li class="breadcrumb-item active">资讯列表</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <section class="newlist">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-9 left">
+                        <div class="box">
+                            <div class="title">
+                                <h3>要闻</h3>
+                            </div>
+                            <div class="list">
+                                <div class="row">
+                                    <div class="col-3 img">
+                                        <a href="news-detail.html"><img src="images/temp/list-img.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-9 cont">
+                                        <h4><a href="news-detail.html"
+                                               target="_blank">淘宝运营—直通车助推小卖家挤进类目前十，月销300万车技的逆袭</a></h4>
+                                        <p>
+                                            系统会对已进店的人群和类似未进店的特定人群进行全面展现及曝光然后带来流量。这里是不是在做搜索的时候，人群的重要性不言而喻！那么今天分享的这个店铺，其实就是通过优化特定的人群，然后带来高点击率，高转化，高加购进而带来大量的自然搜索流量而成功的店铺。</p>
+                                        <div class="data">
+                                            <div class="left">
+                                                <span>2018-08-30</span>
+                                                <span>
+                                                    <i class="icon tag"></i>
+                                                    <a href="#" target="_blank">seo</a>
+                                                    <a href="#" target="_blank">产品</a>
+                                                    <a href="#" target="_blank">推广</a>
+                                                </span>
+                                            </div>
+                                            <div class="right">
+                                                <a href="#" target="_blank">26322阅读</a>
+                                                <a href="#" target="_blank">1评论</a>
+                                                <a href="#" target="_blank">53赞</a>
+                                                <a href="#" target="_blank">102收藏</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 img">
+                                        <a href="news-detail.html"><img src="images/temp/list-img.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-9 cont">
+                                        <h4><a href="news-detail.html"
+                                               target="_blank">淘宝运营—直通车助推小卖家挤进类目前十，月销300万车技的逆袭</a></h4>
+                                        <p>
+                                            系统会对已进店的人群和类似未进店的特定人群进行全面展现及曝光然后带来流量。这里是不是在做搜索的时候，人群的重要性不言而喻！那么今天分享的这个店铺，其实就是通过优化特定的人群，然后带来高点击率，高转化，高加购进而带来大量的自然搜索流量而成功的店铺。</p>
+                                        <div class="data">
+                                            <div class="left">
+                                                <span>2018-08-30</span>
+                                                <span>
+                                                    <i class="icon tag"></i>
+                                                    <a href="#" target="_blank">seo</a>
+                                                    <a href="#" target="_blank">产品</a>
+                                                    <a href="#" target="_blank">推广</a>
+                                                </span>
+                                            </div>
+                                            <div class="right">
+                                                <a href="#" target="_blank">26322阅读</a>
+                                                <a href="#" target="_blank">1评论</a>
+                                                <a href="#" target="_blank">53赞</a>
+                                                <a href="#" target="_blank">102收藏</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 img">
+                                        <a href="news-detail.html"><img src="images/temp/list-img.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-9 cont">
+                                        <h4><a href="news-detail.html"
+                                               target="_blank">淘宝运营—直通车助推小卖家挤进类目前十，月销300万车技的逆袭</a></h4>
+                                        <p>
+                                            系统会对已进店的人群和类似未进店的特定人群进行全面展现及曝光然后带来流量。这里是不是在做搜索的时候，人群的重要性不言而喻！那么今天分享的这个店铺，其实就是通过优化特定的人群，然后带来高点击率，高转化，高加购进而带来大量的自然搜索流量而成功的店铺。</p>
+                                        <div class="data">
+                                            <div class="left">
+                                                <span>2018-08-30</span>
+                                                <span>
+                                                    <i class="icon tag"></i>
+                                                    <a href="#" target="_blank">seo</a>
+                                                    <a href="#" target="_blank">产品</a>
+                                                    <a href="#" target="_blank">推广</a>
+                                                </span>
+                                            </div>
+                                            <div class="right">
+                                                <a href="#" target="_blank">26322阅读</a>
+                                                <a href="#" target="_blank">1评论</a>
+                                                <a href="#" target="_blank">53赞</a>
+                                                <a href="#" target="_blank">102收藏</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 img">
+                                        <a href="news-detail.html"><img src="images/temp/list-img.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-9 cont">
+                                        <h4><a href="news-detail.html"
+                                               target="_blank">淘宝运营—直通车助推小卖家挤进类目前十，月销300万车技的逆袭</a></h4>
+                                        <p>
+                                            系统会对已进店的人群和类似未进店的特定人群进行全面展现及曝光然后带来流量。这里是不是在做搜索的时候，人群的重要性不言而喻！那么今天分享的这个店铺，其实就是通过优化特定的人群，然后带来高点击率，高转化，高加购进而带来大量的自然搜索流量而成功的店铺。</p>
+                                        <div class="data">
+                                            <div class="left">
+                                                <span>2018-08-30</span>
+                                                <span>
+                                                    <i class="icon tag"></i>
+                                                    <a href="#" target="_blank">seo</a>
+                                                    <a href="#" target="_blank">产品</a>
+                                                    <a href="#" target="_blank">推广</a>
+                                                </span>
+                                            </div>
+                                            <div class="right">
+                                                <a href="#" target="_blank">26322阅读</a>
+                                                <a href="#" target="_blank">1评论</a>
+                                                <a href="#" target="_blank">53赞</a>
+                                                <a href="#" target="_blank">102收藏</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 img">
+                                        <a href="news-detail.html"><img src="images/temp/list-img.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-9 cont">
+                                        <h4><a href="news-detail.html"
+                                               target="_blank">淘宝运营—直通车助推小卖家挤进类目前十，月销300万车技的逆袭</a></h4>
+                                        <p>
+                                            系统会对已进店的人群和类似未进店的特定人群进行全面展现及曝光然后带来流量。这里是不是在做搜索的时候，人群的重要性不言而喻！那么今天分享的这个店铺，其实就是通过优化特定的人群，然后带来高点击率，高转化，高加购进而带来大量的自然搜索流量而成功的店铺。</p>
+                                        <div class="data">
+                                            <div class="left">
+                                                <span>2018-08-30</span>
+                                                <span>
+                                                    <i class="icon tag"></i>
+                                                    <a href="#" target="_blank">seo</a>
+                                                    <a href="#" target="_blank">产品</a>
+                                                    <a href="#" target="_blank">推广</a>
+                                                </span>
+                                            </div>
+                                            <div class="right">
+                                                <a href="#" target="_blank">26322阅读</a>
+                                                <a href="#" target="_blank">1评论</a>
+                                                <a href="#" target="_blank">53赞</a>
+                                                <a href="#" target="_blank">102收藏</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 img">
+                                        <a href="news-detail.html"><img src="images/temp/list-img.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-9 cont">
+                                        <h4><a href="news-detail.html"
+                                               target="_blank">淘宝运营—直通车助推小卖家挤进类目前十，月销300万车技的逆袭</a></h4>
+                                        <p>
+                                            系统会对已进店的人群和类似未进店的特定人群进行全面展现及曝光然后带来流量。这里是不是在做搜索的时候，人群的重要性不言而喻！那么今天分享的这个店铺，其实就是通过优化特定的人群，然后带来高点击率，高转化，高加购进而带来大量的自然搜索流量而成功的店铺。</p>
+                                        <div class="data">
+                                            <div class="left">
+                                                <span>2018-08-30</span>
+                                                <span>
+                                                    <i class="icon tag"></i>
+                                                    <a href="#" target="_blank">seo</a>
+                                                    <a href="#" target="_blank">产品</a>
+                                                    <a href="#" target="_blank">推广</a>
+                                                </span>
+                                            </div>
+                                            <div class="right">
+                                                <a href="#" target="_blank">26322阅读</a>
+                                                <a href="#" target="_blank">1评论</a>
+                                                <a href="#" target="_blank">53赞</a>
+                                                <a href="#" target="_blank">102收藏</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 img">
+                                        <a href="news-detail.html"><img src="images/temp/list-img.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-9 cont">
+                                        <h4><a href="news-detail.html"
+                                               target="_blank">淘宝运营—直通车助推小卖家挤进类目前十，月销300万车技的逆袭</a></h4>
+                                        <p>
+                                            系统会对已进店的人群和类似未进店的特定人群进行全面展现及曝光然后带来流量。这里是不是在做搜索的时候，人群的重要性不言而喻！那么今天分享的这个店铺，其实就是通过优化特定的人群，然后带来高点击率，高转化，高加购进而带来大量的自然搜索流量而成功的店铺。</p>
+                                        <div class="data">
+                                            <div class="left">
+                                                <span>2018-08-30</span>
+                                                <span>
+                                                    <i class="icon tag"></i>
+                                                    <a href="#" target="_blank">seo</a>
+                                                    <a href="#" target="_blank">产品</a>
+                                                    <a href="#" target="_blank">推广</a>
+                                                </span>
+                                            </div>
+                                            <div class="right">
+                                                <a href="#" target="_blank">26322阅读</a>
+                                                <a href="#" target="_blank">1评论</a>
+                                                <a href="#" target="_blank">53赞</a>
+                                                <a href="#" target="_blank">102收藏</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 img">
+                                        <a href="news-detail.html"><img src="images/temp/list-img.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-9 cont">
+                                        <h4><a href="news-detail.html"
+                                               target="_blank">淘宝运营—直通车助推小卖家挤进类目前十，月销300万车技的逆袭</a></h4>
+                                        <p>
+                                            系统会对已进店的人群和类似未进店的特定人群进行全面展现及曝光然后带来流量。这里是不是在做搜索的时候，人群的重要性不言而喻！那么今天分享的这个店铺，其实就是通过优化特定的人群，然后带来高点击率，高转化，高加购进而带来大量的自然搜索流量而成功的店铺。</p>
+                                        <div class="data">
+                                            <div class="left">
+                                                <span>2018-08-30</span>
+                                                <span>
+                                                    <i class="icon tag"></i>
+                                                    <a href="#" target="_blank">seo</a>
+                                                    <a href="#" target="_blank">产品</a>
+                                                    <a href="#" target="_blank">推广</a>
+                                                </span>
+                                            </div>
+                                            <div class="right">
+                                                <a href="#" target="_blank">26322阅读</a>
+                                                <a href="#" target="_blank">1评论</a>
+                                                <a href="#" target="_blank">53赞</a>
+                                                <a href="#" target="_blank">102收藏</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 img">
+                                        <a href="news-detail.html"><img src="images/temp/list-img.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-9 cont">
+                                        <h4><a href="news-detail.html"
+                                               target="_blank">淘宝运营—直通车助推小卖家挤进类目前十，月销300万车技的逆袭</a></h4>
+                                        <p>
+                                            系统会对已进店的人群和类似未进店的特定人群进行全面展现及曝光然后带来流量。这里是不是在做搜索的时候，人群的重要性不言而喻！那么今天分享的这个店铺，其实就是通过优化特定的人群，然后带来高点击率，高转化，高加购进而带来大量的自然搜索流量而成功的店铺。</p>
+                                        <div class="data">
+                                            <div class="left">
+                                                <span>2018-08-30</span>
+                                                <span>
+                                                    <i class="icon tag"></i>
+                                                    <a href="#" target="_blank">seo</a>
+                                                    <a href="#" target="_blank">产品</a>
+                                                    <a href="#" target="_blank">推广</a>
+                                                </span>
+                                            </div>
+                                            <div class="right">
+                                                <a href="#" target="_blank">26322阅读</a>
+                                                <a href="#" target="_blank">1评论</a>
+                                                <a href="#" target="_blank">53赞</a>
+                                                <a href="#" target="_blank">102收藏</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 img">
+                                        <a href="news-detail.html"><img src="images/temp/list-img.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-9 cont">
+                                        <h4><a href="news-detail.html"
+                                               target="_blank">淘宝运营—直通车助推小卖家挤进类目前十，月销300万车技的逆袭</a></h4>
+                                        <p>
+                                            系统会对已进店的人群和类似未进店的特定人群进行全面展现及曝光然后带来流量。这里是不是在做搜索的时候，人群的重要性不言而喻！那么今天分享的这个店铺，其实就是通过优化特定的人群，然后带来高点击率，高转化，高加购进而带来大量的自然搜索流量而成功的店铺。</p>
+                                        <div class="data">
+                                            <div class="left">
+                                                <span>2018-08-30</span>
+                                                <span>
+                                                    <i class="icon tag"></i>
+                                                    <a href="#" target="_blank">seo</a>
+                                                    <a href="#" target="_blank">产品</a>
+                                                    <a href="#" target="_blank">推广</a>
+                                                </span>
+                                            </div>
+                                            <div class="right">
+                                                <a href="#" target="_blank">26322阅读</a>
+                                                <a href="#" target="_blank">1评论</a>
+                                                <a href="#" target="_blank">53赞</a>
+                                                <a href="#" target="_blank">102收藏</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 img">
+                                        <a href="news-detail.html"><img src="images/temp/list-img.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-9 cont">
+                                        <h4><a href="news-detail.html"
+                                               target="_blank">淘宝运营—直通车助推小卖家挤进类目前十，月销300万车技的逆袭</a></h4>
+                                        <p>
+                                            系统会对已进店的人群和类似未进店的特定人群进行全面展现及曝光然后带来流量。这里是不是在做搜索的时候，人群的重要性不言而喻！那么今天分享的这个店铺，其实就是通过优化特定的人群，然后带来高点击率，高转化，高加购进而带来大量的自然搜索流量而成功的店铺。</p>
+                                        <div class="data">
+                                            <div class="left">
+                                                <span>2018-08-30</span>
+                                                <span>
+                                                    <i class="icon tag"></i>
+                                                    <a href="#" target="_blank">seo</a>
+                                                    <a href="#" target="_blank">产品</a>
+                                                    <a href="#" target="_blank">推广</a>
+                                                </span>
+                                            </div>
+                                            <div class="right">
+                                                <a href="#" target="_blank">26322阅读</a>
+                                                <a href="#" target="_blank">1评论</a>
+                                                <a href="#" target="_blank">53赞</a>
+                                                <a href="#" target="_blank">102收藏</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 img">
+                                        <a href="news-detail.html"><img src="images/temp/list-img.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-9 cont">
+                                        <h4><a href="news-detail.html"
+                                               target="_blank">淘宝运营—直通车助推小卖家挤进类目前十，月销300万车技的逆袭</a></h4>
+                                        <p>
+                                            系统会对已进店的人群和类似未进店的特定人群进行全面展现及曝光然后带来流量。这里是不是在做搜索的时候，人群的重要性不言而喻！那么今天分享的这个店铺，其实就是通过优化特定的人群，然后带来高点击率，高转化，高加购进而带来大量的自然搜索流量而成功的店铺。</p>
+                                        <div class="data">
+                                            <div class="left">
+                                                <span>2018-08-30</span>
+                                                <span>
+                                                    <i class="icon tag"></i>
+                                                    <a href="#" target="_blank">seo</a>
+                                                    <a href="#" target="_blank">产品</a>
+                                                    <a href="#" target="_blank">推广</a>
+                                                </span>
+                                            </div>
+                                            <div class="right">
+                                                <a href="#" target="_blank">26322阅读</a>
+                                                <a href="#" target="_blank">1评论</a>
+                                                <a href="#" target="_blank">53赞</a>
+                                                <a href="#" target="_blank">102收藏</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 img">
+                                        <a href="news-detail.html"><img src="images/temp/list-img.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-9 cont">
+                                        <h4><a href="news-detail.html"
+                                               target="_blank">淘宝运营—直通车助推小卖家挤进类目前十，月销300万车技的逆袭</a></h4>
+                                        <p>
+                                            系统会对已进店的人群和类似未进店的特定人群进行全面展现及曝光然后带来流量。这里是不是在做搜索的时候，人群的重要性不言而喻！那么今天分享的这个店铺，其实就是通过优化特定的人群，然后带来高点击率，高转化，高加购进而带来大量的自然搜索流量而成功的店铺。</p>
+                                        <div class="data">
+                                            <div class="left">
+                                                <span>2018-08-30</span>
+                                                <span>
+                                                    <i class="icon tag"></i>
+                                                    <a href="#" target="_blank">seo</a>
+                                                    <a href="#" target="_blank">产品</a>
+                                                    <a href="#" target="_blank">推广</a>
+                                                </span>
+                                            </div>
+                                            <div class="right">
+                                                <a href="#" target="_blank">26322阅读</a>
+                                                <a href="#" target="_blank">1评论</a>
+                                                <a href="#" target="_blank">53赞</a>
+                                                <a href="#" target="_blank">102收藏</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pagination">
+                                    <nav>
+                                        <ul class="pagination justify-content-center">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                    <span aria-hidden="true">&laquo;</span>
+                                                    <span class="sr-only">上一页</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                    <span aria-hidden="true">&raquo;</span>
+                                                    <span class="sr-only">下一页</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 right">
+                        <div class="box">
+                            <div class="title">
+                                <h3>开店规则</h3>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item"><a href="#">'聚划算换货运费险生效吗?赔付标准是什么?'</a></li>
+                                <li class="list-group-item"><a href="#">又新增规则！这次是《“淘宝网企业服务”市场管理规范》</a></li>
+                                <li class="list-group-item"><a href="#">阿里V任务平台规则调整，达人和商家都要注意了！</a></li>
+                                <li class="list-group-item"><a href="#">规则变更：淘宝农药行业标准有新调整</a></li>
+                                <li class="list-group-item"><a href="#">淘宝网生活服务市场管理规范变更通知</a></li>
+                            </ul>
+                        </div>
+                        <div class="box keywords">
+                            <div class="title">
+                                <h3>热门标签</h3>
+                            </div>
+                            <ul class="keyword clearfix">
+                                <li><a href="#">短讯</a></li>
+                                <li><a href="#">阿里</a></li>
+                                <li><a href="#">购物</a></li>
+                                <li><a href="#">网络营销</a></li>
+                                <li><a href="#">消费</a></li>
+                                <li><a href="#">淘宝天猫</a></li>
+                                <li><a href="#">互联网</a></li>
+                                <li><a href="#">活动促销</a></li>
+                                <li><a href="#">微信</a></li>
+                                <li><a href="#">电商</a></li>
+                                <li><a href="#">电商大佬</a></li>
+                                <li><a href="#">支付</a></li>
+                                <li><a href="#">快递物流</a></li>
+                                <li><a href="#">商品</a></li>
+                                <li><a href="#">平台</a></li>
+                                <li><a href="#">品牌</a></li>
+                                <li><a href="#">其他</a></li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <div class="title mb-2">
+                                <h3>热门专题</h3>
+                                <a href="#" class="more">更多 ></a>
+                            </div>
+                            <div class="card">
+                                <div class="px-3">
+                                    <a href="#" target="_blank">
+                                    <img class="card-img-top mb-2" src="images/temp/kc.jpg" alt="新营销背景下，如何布局推广渠道才合理？">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h5><a href="#" target="_blank">商务世界·2018中国商务服务大会</a></h5>
+                                    <p class="card-text">商务世界·2018中国商务服务大会于2018年8月1日—2日在北京国际会议中心举行。</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="px-3">
+                                    <a href="#" target="_blank">
+                                        <img class="card-img-top mb-2" src="images/temp/kc.jpg" alt="新营销背景下，如何布局推广渠道才合理？">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h5><a href="#" target="_blank">商务世界·2018中国商务服务大会</a></h5>
+                                    <p class="card-text">商务世界·2018中国商务服务大会于2018年8月1日—2日在北京国际会议中心举行。</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="px-3">
+                                    <a href="#" target="_blank">
+                                        <img class="card-img-top mb-2" src="images/temp/kc.jpg" alt="新营销背景下，如何布局推广渠道才合理？">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h5><a href="#" target="_blank">商务世界·2018中国商务服务大会</a></h5>
+                                    <p class="card-text">商务世界·2018中国商务服务大会于2018年8月1日—2日在北京国际会议中心举行。</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="px-3">
+                                    <a href="#" target="_blank">
+                                        <img class="card-img-top mb-2" src="images/temp/kc.jpg" alt="新营销背景下，如何布局推广渠道才合理？">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h5><a href="#" target="_blank">商务世界·2018中国商务服务大会</a></h5>
+                                    <p class="card-text">商务世界·2018中国商务服务大会于2018年8月1日—2日在北京国际会议中心举行。</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="box">
+                            <div class="title mb-2">
+                                <h3>多多商学院</h3>
+                                <a href="#" class="more">更多 ></a>
+                            </div>
+                            <div class="px-3">
+
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5>爆破手淘首页流量，猜你喜欢几十万访客玩法</h5>
+                                    <p class="card-text">讲师：麦子</p>
+                                    <p class="card-text">开课：2018年10月10日</p>
+                                    <a href="#" class="bm">报名</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5>爆破手淘首页流量，猜你喜欢几十万访客玩法</h5>
+                                    <p class="card-text">讲师：麦子</p>
+                                    <p class="card-text">开课：2018年10月10日</p>
+                                    <a href="#" class="bm">报名</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5>爆破手淘首页流量，猜你喜欢几十万访客玩法</h5>
+                                    <p class="card-text">讲师：麦子</p>
+                                    <p class="card-text">开课：2018年10月10日</p>
+                                    <a href="#" class="bm">报名</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <i class="icon zykm"></i>
+                    <h3>30+ 个专业科目</h3>
+                    <p>涵盖几乎所有热门职业技能，总有一门技能是你想掌握</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <i class="icon ydtb"></i>
+                    <h3>4大学习终端云同步</h3>
+                    <p>支持电脑、手机、平板、电视同步学习，随时随地畅享学习乐趣</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <i class="icon hdzb"></i>
+                    <h3>12小时实时互动直播</h3>
+                    <p>真实而有趣的用户体验，让学习变得愉悦，更加高效</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <i class="icon xxfa"></i>
+                    <h3>1套完整的学习方案</h3>
+                    <p>以保障学习效果为最终目的，打造颠覆性的翻转课堂体验</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid copy">
+        <div class="container">
+            <div class="link">
+                <ul>
+                    <li><a href="#" target="_blank">关于我们</a></li>
+                    <li><a href="#" target="_blank">联系我们</a></li>
+                    <li><a href="#" target="_blank">加入我们</a></li>
+                    <li><a href="#" target="_blank">媒体报道</a></li>
+                    <li><a href="#" target="_blank">公司账号</a></li>
+                </ul>
+            </div>
+            <h5><span>友情链接</span></h5>
+            <div class="yqlink">
+                <ul>
+                    <li><a href="#" target="_blank">腾讯精品课</a></li>
+                    <li><a href="#" target="_blank">中国培训网</a></li>
+                    <li><a href="#" target="_blank">易百教程</a></li>
+                    <li><a href="#" target="_blank">爱奇艺教育</a></li>
+                    <li><a href="#" target="_blank">UI设计教程</a></li>
+                    <li><a href="#" target="_blank">优胜教育</a></li>
+                    <li><a href="#" target="_blank">CFA</a></li>
+                    <li><a href="#" target="_blank">西点师培训</a></li>
+                    <li><a href="#" target="_blank">清华大学出版社</a></li>
+                    <li><a href="#" target="_blank">书问</a></li>
+                    <li><a href="#" target="_blank">网络营销</a></li>
+                    <li><a href="#" target="_blank">腾讯精品课</a></li>
+                    <li><a href="#" target="_blank">中国培训网</a></li>
+                    <li><a href="#" target="_blank">优胜教育</a></li>
+                    <li><a href="#" target="_blank">CFA</a></li>
+                    <li><a href="#" target="_blank">西点师培训</a></li>
+                    <li><a href="#" target="_blank">清华大学出版社</a></li>
+                    <li><a href="#" target="_blank">书问</a></li>
+                    <li><a href="#" target="_blank">网络营销</a></li>
+                    <li><a href="#" target="_blank">中国培训网</a></li>
+                    <li><a href="#" target="_blank">易百教程</a></li>
+                    <li><a href="#" target="_blank">爱奇艺教育</a></li>
+                    <li><a href="#" target="_blank">UI设计教程</a></li>
+                    <li><a href="#" target="_blank">CFA</a></li>
+                    <li><a href="#" target="_blank">西点师培训</a></li>
+                    <li><a href="#" target="_blank">清华大学出版社</a></li>
+                    <li><a href="#" target="_blank">书问</a></li>
+                    <li><a href="#" target="_blank">网络营销</a></li>
+                </ul>
+            </div>
+            <div class="copy">
+                Copyright&nbsp;&copy;&nbsp;2018-2028&nbsp;多多商学院&nbsp;&nbsp;粤ICP备120301010号
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="lib/swiper/js/swiper.min.js"></script>
+<script src="js/bannar.js"></script>
+<script src="js/slide.js"></script>
+
+</body>
+</html>
