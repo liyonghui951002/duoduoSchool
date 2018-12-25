@@ -1074,10 +1074,8 @@
 <script src="js/bannar.js"></script>
 <script src="js/sweetalert.min.js"></script>
 <script src="js/untils.js"></script>
+<script src="js/cache.js"></script>
 <script type="text/javascript">
-	if(getCookie("duoduoName") == null) {} else {
-		$(".login").html('<li><span style="color: red;">欢迎，' + getCookie("duoduoName") + '</span></li>');
-	}
 	//首页导航
 	request("http://192.168.31.55/car/api.php?m=category&a=indexCategory", "", function(result) {
 		if(result.result) {

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
     <script src="lib/jquery/jquery-3.3.1.min.js"></script>
     <script src="lib/popper.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
@@ -85,7 +86,7 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">首页</a></li>
                         <li class="breadcrumb-item"><a href="#">要闻</a></li>
-                        <li class="breadcrumb-item active">淘宝运营—直通车助推小卖家挤进类目前十，月销300万车技的逆袭</li>
+                        <li class="breadcrumb-item active"></li>
                     </ol>
                 </nav>
             </div>
@@ -98,15 +99,13 @@
                     <div class="col-12 col-md-9 left">
                         <div class="box article-detial">
                             <div class="article-hd">
-                                <h1 class="article-title">淘宝运营—直通车助推小卖家挤进类目前十，月销300万车技的逆袭</h1>
+                                <h1 class="article-title"></h1>
                             </div>
                             <div class="article-info">
                                 <div class="origin">
                                     <div class="cate-time J_cate-time">
-                                            <span class="J_origin-span">文<i class="wen-i">/</i>
-                                                <span class="author">'麦子'</span><i>·</i>
-                                            </span>
-                                        <span class="time">2018-08-30 14:31:57 </span>
+                                            <span class="J_origin-span author"></span>
+                                        <span class="time"></span>
                                     </div>
                                 </div>
                                 <div class="share">
@@ -114,13 +113,13 @@
                                     <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
                                 </div>
                                 <div class="opts">
-                                    <a href="javascript:void(0);" title="阅读">26573阅读</a><i>·</i>
-                                    <a class="J_maijia-block" href="#" title="评论">1评论</a><i>·</i>
-                                    <a href="javascript:void(0);" class="J_widget-zan">53赞</a>
+                                    <a href="javascript:void(0);" title="阅读" class="feading"></a><i>·</i>
+                                    <a class="J_maijia-block comments" href="#" title="评论"></a><i>·</i>
+                                    <a href="javascript:void(0);" class="J_widget-zan"></a>
                                 </div>
                             </div>
                             <div class="article-content clearfix">
-                                <p><span style="text-indent: 2em;">大家好，今天给大家讲述下<a href="http://ytg.kuaimai.com"
+                                <!--<p><span style="text-indent: 2em;">大家好，今天给大家讲述下<a href="http://ytg.kuaimai.com"
                                                                                   target="_blank">淘宝</a><a
                                         href="http://www.maijia.com/news/tag/ztc"
                                         target="_blank">直通车</a>如何助推小卖家挤进类目前十</span><br></p>
@@ -189,7 +188,7 @@
                                         href="http://www.maijia.com/news/article/70948" target="_blank">开直通车</a>也是这么个道理！</span></span></span>
                                 </p>
                                 <p><span style=""><span style="font-family:&amp;quot"><span style="">今天给大家讲的是淘宝直通车接地气操作步骤，按照这个步骤来转化率不会有问题</span></span></span>
-                                </p>
+                                </p>-->
                             </div>
                             <div class="row app-download-entry">
                                 <div class="col-12 img-box">
@@ -201,12 +200,12 @@
                                     <div class="detail-tags-page clearfix">
                                         <span class="tag-label">标签：</span>
                                         <div class="tag-box clearfix">
-                                            <a href="#" target="_blank">seo</a>
+                                            <!--<a href="#" target="_blank">seo</a>
                                             <a href="#" target="_blank">产品</a>
                                             <a href="#" target="_blank">推广</a>
                                             <a href="#" target="_blank">流量</a>
                                             <a href="#" target="_blank">直通车</a>
-                                            <a href="#" target="_blank">转化率</a>
+                                            <a href="#" target="_blank">转化率</a>-->
                                         </div>
                                     </div>
                                 </div>
@@ -216,9 +215,9 @@
                                         <a href="#" class="wb">分享到微博</a>
                                     </div>
                                     <div class="detail-opts">
-                                        <a href="javascript:void(0);" class="collect">102</a>
-                                        <a href="javascript:void(0);" class="praise">53</a>
-                                        <a href="#md_pl" class="comment">1</a>
+                                        <a href="javascript:void(0);" class="collect"></a>
+                                        <a href="javascript:void(0);" class="praise"></a>
+                                        <a href="#md_pl" class="comment"></a>
                                     </div>
                                 </div>
                             </div>
@@ -589,6 +588,36 @@
 <script src="lib/swiper/js/swiper.min.js"></script>
 <script src="js/bannar.js"></script>
 <script src="js/slide.js"></script>
-
+<script src="js/sweetalert.min.js"></script>
+<script src="js/untils.js"></script>
+<script src="js/cache.js"></script>
 </body>
 </html>
+<script>
+	var param = $.urlGet();
+	var data = {
+		"id":param.tid.replace("#",""), 
+	}
+	request("http://192.168.31.55/car/api.php?m=News&a=newsView",data,function(result){
+		if(result.result){
+			var data = result.data.dataArr[0];
+			$(".article-title,.active").html(data.title);
+			$(".author").html(data.author);
+			$(".time").html(data.insertTime);
+			$(".feading").html(data.feading+"阅读");
+			$(".J_widget-zan").html(data.zan+"赞");
+			$(".collect").html(data.collection);
+			$(".praise").html(data.zan);
+			$(".comments").html(data.comments+"评论");
+			$(".comment").html(data.comments);
+			$(".article-content").html(data.content);
+			for (var i=0;i<data.label.length;i++) {
+				var html='<a href="#" target="_blank">产品</a>';
+				$(".tag-box").append(html);
+			}
+			
+		}else{
+			swalert("",result.msg,"error");
+		}
+	})
+</script>
