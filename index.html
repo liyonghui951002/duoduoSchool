@@ -12,6 +12,7 @@
 		<script src="lib/jquery/jquery-3.3.1.min.js"></script>
 		<script src="lib/popper.min.js"></script>
 		<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
 		<!--[if lt IE 9]>
     <script src="lib/html5shiv.min.js"></script>
     <script src="lib/respond.min.js"></script>
@@ -52,8 +53,8 @@
 						<nav class="navbar navbar-expand-md col-12 col-md-9">
 							<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
 							<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#headerMenu">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+								<span class="navbar-toggler-icon"></span>
+							</button>
 							<div class="collapse navbar-collapse" id="headerMenu">
 								<ul class="navbar-nav">
 									<li class="nav-item">
@@ -102,6 +103,28 @@
 				</div>
 				<div class="container homelink d-none d-md-block">
 					<div class="home-nav">
+						<!-- 遍历首页导航 start-->
+						<!-- <nav-item
+							v-for="item in groceryList"
+							v-bind:nav="item"
+							v-bind:key="item.id">
+							<ul class="children-nav">
+								<chidren-item v-for="item in groceryList"
+								v-bind:childrennav="item">
+								</children-item>
+							</ul>
+						</nav-item> -->
+						<template v-for='(item, index) in dataArr'>
+						<h5>{{item.title}}</h5>
+						<ul v-bind:class="index==dataArr.length-1 ? 'noborder' : ''">
+							<template v-for="items in item.children">
+									 <li><a>{{items.title}}</a></li>
+							</template>
+							<!--  -->
+						</ul>
+						</template>
+						<!-- end -->
+
 						<!--<h5>热门推荐</h5>
 						<ul>
 							<li>
@@ -1078,27 +1101,40 @@
 <script type="text/javascript">
 	//首页导航
 	request("http://192.168.31.55/car/api.php?m=category&a=indexCategory", "", function(result) {
-		if(result.result) {
-			for(var i = 0; i < result.data.dataArr.length; i++) {
-				var data = result.data.dataArr[i];
-				var html = '<h5>' + data.title + '</h5>'; //一级导航
-				html += (i == result.data.dataArr.length - 1) ? '<ul class="mb-0 noborder">' : '<ul>';
-				for(var j = 0; j < data.children.length; j++) {
-					html += '<li><a href="online.html?cid=' + data.children[j].id + '" target="_blank">' + data.children[j].title + '</a></li>'
-				}
-				html += '</ul>';
-				$(".home-nav").append(html);
-			}
+		if (result.result) {
+			// 			for(var i = 0; i < result.data.dataArr.length; i++) {
+			// 				var data = result.data.dataArr[i];
+			// 				var html = '<h5>' + data.title + '</h5>'; //一级导航
+			// 				html += (i == result.data.dataArr.length - 1) ? '<ul class="mb-0 noborder">' : '<ul>';
+			// 				for(var j = 0; j < data.children.length; j++) {
+			// 					html += '<li><a href="online.html?cid=' + data.children[j].id + '" target="_blank">' + data.children[j].title + '</a></li>'
+			// 				}
+			// 				html += '</ul>';
+			// 				$(".home-nav").append(html);
+			// 			Vue.component('nav-item', {
+			// 				props: ['nav'],
+			// 				template: '<h5>{{ nav.title }}</h5>'
+			// 			})
+			// 			Vue.component('chidren-item', {
+			// 				props: ['chidren-item'],
+			// 				template: '<li><a href="online.html?cid={{ navchildren.id }}" target="_blank">{{}} data.children[j].title }}</a></li>'
+			// 			})
+			var app1 = new Vue({
+				el: '.home-nav',
+				data: result.data
+			});
+			// 			}
 		} else {
 			swalert("", result.msg, "error", function(data) {});
 		}
 	});
 	//首页轮播图<div class="swiper-slide" style="background-image:url(images/bannar/bannar-02.jpg)"></div>
 	request("http://192.168.31.77/car/api.php?m=roll&a=list", "", function(result) {
-		if(result.result) {
-			for(var i = 0; i < result.data.length; i++) {
+		if (result.result) {
+			for (var i = 0; i < result.data.length; i++) {
 				var data = result.data[i];
-				var html = '<div class="swiper-slide" style="background-image:url(' + data.path + ')" href="' + data.jump_url + '"></div>';
+				var html = '<div class="swiper-slide" style="background-image:url(' + data.path + ')" href="' + data.jump_url +
+					'"></div>';
 				$(".swiper-wrapper").append(html);
 			}
 			var swiper = new Swiper('.homebannar', {
@@ -1118,17 +1154,17 @@
 					nextEl: '.swiper-button-next',
 					prevEl: '.swiper-button-prev',
 				},
-				on:{
-			     	 click:function(event){
-			     	 	 event.stopPropagation();
-				         window.open($(".swiper-slide").eq(this.clickedIndex).attr("href"));    
-				      }
-			    }
+				on: {
+					click: function(event) {
+						event.stopPropagation();
+						window.open($(".swiper-slide").eq(this.clickedIndex).attr("href"));
+					}
+				}
 			});
-//			$(".swiper-slide").click(function() {
-//				alert(123);
-//				window.location.href = $(this).attr("href");
-//			})
+			//			$(".swiper-slide").click(function() {
+			//				alert(123);
+			//				window.location.href = $(this).attr("href");
+			//			})
 		} else {
 			swalert("", result.msg, "error", function(data) {});
 		}
